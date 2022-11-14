@@ -98,3 +98,15 @@ updateContacto(1, {
 });
 
 console.log(listaContacto[1]);
+
+// Lista de contacto ordenada
+
+const orden = listaContacto.sort(function (a, b) {
+  if (a.nombres < b.nombres) {
+    return -1;
+  }
+  if (a.nombres > b.nombres) {
+    return 1;
+  }
+  return 0;
+});
